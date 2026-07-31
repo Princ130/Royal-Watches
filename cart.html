@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="cart.css" />
+</head>
+
+<header>
+    <div class="container">
+        <div class="logo-container">
+
+            <!-- logo image is here -->
+
+            <img src="mata.png" height="100" alt="Inforno Logo" class="logo" >
+            
+            <h1>jai mata di</h1>
+        </div>       
+    </div>
+
+    
+    <!-- Add to Cart Button -->
+    <div class="cart-btn-container">
+        <a href="cart.html" class="cta-button">view cart</a>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div class="cart-container">
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary ambient-glow">
+      <h3>Order Summary</h3>
+      <div class="summary-line">
+        <span>Subtotal</span><span id="subtotal">$0.00</span>
+      </div>
+      <div class="summary-line total">
+        <strong>Total</strong><strong id="total">$0.00</strong>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Template for sample product -->
+  <template id="sample-product-template">
+    <div class="cart-item sample">
+      <img src="https://via.placeholder.com/80" class="item-thumbnail" />
+      <div class="item-details">
+        <h4>Royal Sample Product</h4>
+        <p>This is a preview item. Add real products from the dashboard.</p>
+        <span>$0.00</span>
+        <input type="number" value="1" disabled />
+      </div>
+    </div>
+  </template>
+
+  <script src="cart.js"></script>
+</body>
+</html>

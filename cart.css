@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #0B0F1A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .cart-container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cart-item {
+    background-color: #131C2A;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .item-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .item-details h4 {
+    margin: 0;
+    color: white;
+  }
+  
+  .item-details span {
+    font-weight: bold;
+    color: #6C5DD3;
+  }
+  
+  input[type="number"] {
+    margin-top: 0.5rem;
+    width: 60px;
+    padding: 5px;
+    background-color: #1c2432;
+    color: white;
+    border: 1px solid #6C5DD3;
+    border-radius: 5px;
+  }
+  
+  .cart-summary {
+    flex: 1;
+    background-color: #131C2A;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(108, 93, 211, 0.2);
+    border: 1px solid rgba(108, 93, 211, 0.3);
+    height: fit-content;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .cart-summary:hover {
+    box-shadow: 0 0 25px rgba(108, 93, 211, 0.4);
+  }
+  
+  .summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .total {
+    font-size: 1.2rem;
+  }
+  
+  .checkout-btn {
+    background-color: #6C5DD3;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #7E6EEA;
+  }
+  
+  /* Sample styling */
+  .cart-item.sample {
+    opacity: 0.6;
+    border: 1px dashed #6C5DD3;
+    position: relative;
+  }
+  
+  .cart-item.sample::after {
+    content: "Sample Preview";
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: #6C5DD3;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  

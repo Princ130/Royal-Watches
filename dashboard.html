@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inforno - Premium Entry-Level Luxury Watches">
+    <title>Inforno - Luxury Watches</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+
+  <!--mimi-->
+  <div class="mimi" id="mimi">
+    <div class="mimi-face">👩‍💻</div>
+    <div class="bubble" id="bubble"></div>
+  </div>
+  
+
+  <!-- Header -->
+    <header class="site-header">
+       <div class="logo">
+          <img src="mata.png" alt="Brand logo">
+        </div>
+    
+        <nav class="nav-links">
+         <a href="#">Home</a>
+         <a href="#prebooking-section">Shop</a>
+         <a href="#About">About</a>
+         <a href="#contact">Contact</a>
+        </nav>
+    
+        <div class="cart-btn">
+          <a href="cart.html">
+            <button id="cart">View Cart</button>
+          </a>
+        </div>
+        
+     </header>
+                  
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        
+        
+          <!-- FAQ Section -->
+          <div class="hero-box hero-left">
+            <h2>FAQ</h2>
+           <ul>
+             <li>How do I contact support?</li>
+             <h4>Tap the lady on left to mail me.</h4>
+             <li>why shall oi belive that your product is an idle investment?</li>
+             <h4>Our products comes along with resale price cartificate that enshures idle resale value.</h4>
+             <li>What is your return policy?</li>
+           </ul>
+           </div>
+    
+        <!-- Quote Section -->
+        <div class="hero-box hero-center">
+          <blockquote>Royalty is not just worn, it's lived."  -</blockquote>
+        </div>
+    
+        <!-- Assistant Section -->
+        <div class="hero-box hero-right assistant"> 
+          <img src="contactlady1.png" height="300px" alt="Assistant 1" class="img img1" />
+          <img src="contactlady2.png" height="300px" alt="Assistant 2" class="img img2" />
+          <div class="thought-bubble">How can I help you?</div>
+        </div>
+      </div>
+    </section>
+          
+          
+    </section>
+
+    <!-- Featured Products -->
+    <section class="top-products">
+        <h2>Top Products</h2>
+        <div class="product-scroll-wrapper">
+           <div class="product-container">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+              <img src="images/product1.jpg" alt="Product 1" />
+              <h3>Golden Ace</h3>
+              <p>"Precision engraved for the royalty in you."</p>
+              <button onclick="addToCart('product1')">Add to Cart</button>
+              <button onclick="viewDetails('product1')">View Details</button>
+            </div>
+      
+            <!-- Product 2 -->
+            <div class="product-card">
+              <img src="images/product2.jpg" alt="Product 2" />
+              <h3>Midnight Luxe</h3>
+              <p>"When elegance meets midnight magic."</p>
+              <button onclick="addToCart('product2')">Add to Cart</button>
+              <button onclick="viewDetails('product2')">View Details</button>
+            </div>
+      
+            <!-- Add 3 more similarly -->
+                <div class="product-card">
+                   <img src="product3.jpg" alt="watch 3"/>
+                   <h3>devil c</h3>
+                   <p>summoned from shadows sealed in gold</p>
+                   <button onclick="addToCart('product3')">add to card</button>
+                   <button onclick="viewDetails('product3')">view details</button>  
+                </div>
+
+              <!-- Product 4 -->
+                <div class="product-card">
+                 <img src="images/product4.jpg" alt="Product 4" />
+                 <h3>Midnight Luxe</h3>
+                 <p>"When elegance meets midnight magic."</p>
+                 <button onclick="addToCart('product4')">Add to Cart</button>
+                 <button onclick="viewDetails('product4')">View Details</button>
+                </div>
+              
+              
+              <!-- Product 5 -->
+                <div class="product-card">
+                 <img src="images/product5.jpg" alt="Product 5" />
+                 <h3>Midnight Luxe</h3>
+                 <p>"When elegance meets midnight magic."</p>
+                 <button onclick="addToCart('product5')">Add to Cart</button>
+                 <button onclick="viewDetails('product5')">View Details</button>
+                 </div>
+
+             </div>
+         </div>
+    </section>
+
+
+    <section class="prebooking-section">
+      <h2>Prebook Products</h2>
+    
+      <div class="product-scroll-wrapper">
+        <div class="prebook-product">
+          <div class="prebook-product-card">
+            <img src="prebook1.png" alt="Product 1">
+            <h3>silver queen</h3>
+            <p>summoned from shadow sealed in silver</p>
+            <button>Prebook</button>
+          </div>
+    
+          <div class="prebook-product-card">
+            <img src="prebook2.jpg" alt="Product 2">
+            <h3>dark knight</h3>
+            <p>when dominence meets eligence</p>
+            <button>Prebook</button>
+          </div>
+
+          
+          <div class="prebook-product-card">
+            <img src="prebook.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2</p>
+            <button>Prebook</button>
+          </div>
+
+
+          <div class="prebook-product-card">
+            <img src="prebook.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of product 2</p>
+            <button>Prebook</button>
+          </div>
+
+         
+    
+          <!-- More .prebook-product-card items here -->
+        </div>
+      </div>
+    </section>
+    
+  
+    <!-- Popup Form -->
+    <div class="form-popup" id="prebookForm">
+      <form class="form-container" onsubmit="submitForm(event)">
+        <h2>Pre-Book: <span id="productName"></span></h2>
+        <input type="hidden" id="productInput" name="product">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+
+
+
+
+    <!-- About Us -->
+    <section id="About" class="About">
+        <div class="container"> 
+            <h2>About Inforno</h2>
+            <p5>At Inforno, we create watches that blend luxury with smart investment. Our timepieces offer timeless design with precision craftsmanship,
+              <br> aimed at providing our custmers with the feel of luxury in their hands, as a symblol of the success they have made and will make further. 
+            </p5>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Inforno. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+
+    <script>
+        const track = document.getElementById('watchTrack');
+        let index = 0;
+      
+        function autoSlide() {
+          index++;
+          const total = track.children.length;
+          if (index >= total) index = 0;
+          track.style.transform = `translateX(-${index * 100}%)`;
+        }
+      
+        setInterval(autoSlide, 4000); // Change slide every 2 seconds
+      </script>
+</body>
+</html>

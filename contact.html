@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me Popup</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <button onclick="openContactModal()">Contact Me</button>
+
+  <!-- Ribbons and Pattern -->
+  <div class="ribbon-wrapper" id="ribbonWrapper">
+    <div class="ribbon ribbon-left"></div>
+    <div class="ribbon ribbon-right"></div>
+    <div class="pattern-overlay"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <h3>Contact Me</h3>
+      <input type="text" id="userName" placeholder="Your Name" required />
+      <input type="email" id="userEmail" placeholder="Your Email" required />
+      <textarea id="userMessage" rows="4" placeholder="Your Message"></textarea>
+      <button onclick="sendEmail()">Send Email</button>
+      <button onclick="closeContactModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
